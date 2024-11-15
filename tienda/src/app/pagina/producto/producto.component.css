@@ -1,0 +1,37 @@
+/*contenedor para las cards*/
+.card-container {
+    display: flex;/**/
+    flex-wrap: wrap;/*para que las card salten a la siguiente fila si no caben en la misma*/ 
+    gap: 16px;/*espacio entre las cards*/
+    justify-content: flex-start;/*alinea las cards al inicio*/
+    margin: auto;
+}
+
+/*estilo d elas cards que se alinean*/
+.card-container .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    flex: 1 1 200px; /*hace que las cards ocupen el espacio disponible y se ajusten al tamaño*/
+}
+/*estilo del boton*/
+.card-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/*estilo de la card estirada*/
+.card.text-center {
+    width: 100%; /*o el tamaño que deseas para que ocupe todo el espacio dispoible*/
+}
+.product-image {
+    width:  100%;/*ajusta e tamaño d ela imagen al 100% del contenedor*/
+    height: auto;/*mantiene la proporcion de la imagen*/
+    border-radius: 4px; /*bordes redondeadoz para la imagen*/
+}
